@@ -4,6 +4,11 @@ var sports = ['soccer', 'baseball'];
 sports.push('football', 'swimming');
 // A:
 // sports = <your answer>
+function listSports (sports){
+  return (sports);
+}
+
+
 
 
 
@@ -66,6 +71,7 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // A:
 
 
+
 console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'numbersOverX should return "18,101"'});
 
 // 8.
@@ -94,13 +100,13 @@ var instructors = [
 ];
 
 var instructorNameDiscipline = instructors[5];
-// greenvIlle = <your answer>
+// greenvIlle = [Will, JavaScript]
 
 var instructorOne = instructors[4][0];
-// instructorOne = <your answer>
+// instructorOne = [Dan, JavaScript] [JD, JavaScript]
 
 var instructorTwo = instructors[0][1];
-// instructorTwo = <your answer>
+// instructorTwo = [JD, JavaScript] [Tim, Javascript]
 
 var instructorThree = instructors[2][0];
-// instructorThree = <your answer>
+// instructorThree = [Brit, Ruby] [JD, JavaScript]
