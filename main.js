@@ -37,8 +37,11 @@ console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should
 // Hint: When looping over the array, start at the last index
 // and decrement the iterator to zero
 // A:
-
-
+// On this, the array.reverse is all I had to do. The array prefix just specifies which array I want to use. When I tested it I used console.log.
+var array = [6,5,101,3,11,7,9,18,4,12,1];
+function arrayReverser(array) {
+array.reverse();
+}
 console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
 
