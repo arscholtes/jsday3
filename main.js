@@ -41,6 +41,7 @@ console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should
 var array = [6,5,101,3,11,7,9,18,4,12,1];
 function arrayReverser(array) {
 array.reverse();
+return array;
 }
 console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
