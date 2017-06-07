@@ -80,6 +80,25 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // and returns the sum of all of the numbers in the array
 // A:
 
+function sumArrayOfNumbers(array) {
+  // Used the term 'array' inside the parameter of the function so it will be universal to any array;
+
+  let sum = 0;
+  // created 'let sum = 0' in order to give us a place to log our data from the 'for loop';
+
+  for (let i = 0; i < array.length; i++) {
+    // 1st Part: 'i' is set to 0; 2nd Part: this should come back as either true or false and is the main condition of our for loop;
+    //  3rd Part: Each time the for loop is ran, the increment "i" will be increased by one each time.
+
+    sum += array[i]; // similar to writing like sum = sum + array[i]
+    // With 'i' being set to 0, the array will start at the very first item in it's index.
+    // Then, each time the loop is ran, 'i' (array index in this case) will increase by one.
+    // The += operator will add the value of "array[i]" to the value of "sum", and the result will then be stored in "sum".
+
+  };
+  return sum;
+}
+
 
 console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumbers should return 177'});
 
@@ -97,6 +116,7 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // Write a function that accepts both an array and number argument
 // and returns an array of only the numbers greater than the number passed to the function
 // A:
+
 
 
 console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'numbersOverX should return "18,101"'});
