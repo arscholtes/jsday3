@@ -12,6 +12,17 @@ sports.push('football', 'swimming');
 // that accepts an array argument and returns the longest string in the array
 var strings = ['this','is','a','collection','of','words'];
 // A:
+function longestString (stringArr) {
+  let result = "";
+  let test = "";
+  for (let i = 0; i < stringArr.length; i++) {
+    test = stringArr[i];
+    if (test.length > result.length) {
+      result = test;
+    }
+  }
+  return result;
+}
 
 
 console.assert(longestString(strings) === 'collection', {"message": "longestString should return 'collection'"});
