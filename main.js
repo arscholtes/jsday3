@@ -33,6 +33,11 @@ console.assert(longestString(strings) === 'collection', {"message": "longestStri
 var numbers = [18,12,4,1,9,7,11,3,101,5,6];
 
 
+// 3.
+// Write a function `smallestNumber()` that accepts an array
+// and returns the smallest number in the array.
+// A:
+
 
 console.log(minNumbers);
 // Write a function `smallestNumber()` that accepts an array
