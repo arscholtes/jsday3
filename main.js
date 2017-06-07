@@ -86,7 +86,12 @@ console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'n
 var numbers = [1,12,4,18,9,7,11,3,101,5,6];
 var numbersTwo = [33,56,72,2,5,66,90,21,42];
 // A:
-
+function joinArrays(array1, array2) {
+  for (index in array2) {        // for every item in array2...
+    array1.push(array2[index]);  // push the thing in array2[index] into array1
+  }
+  return array1;  // return the new array1
+}
 
 console.assert(joinArrays([numbers, numbersTwo]).toString() === '1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42', {'message': 'joinArrays should return "1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42"'});
 
