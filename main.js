@@ -28,14 +28,27 @@ function longestString (stringArr) {
 console.assert(longestString(strings) === 'collection', {"message": "longestString should return 'collection'"});
 
 
+
 // Use the `numbers` array for questions 3 - 8.
 var numbers = [18,12,4,1,9,7,11,3,101,5,6];
 
 
-// 3.
+
+console.log(minNumbers);
 // Write a function `smallestNumber()` that accepts an array
 // and returns the smallest number in the array.
 // A:
+
+
+function smallestNumber(numArry){
+let smallestNumber = numArry[0];
+for (let i = 1; i < numArry.length; i++){
+  if (numArry[i] < smallestNumber) {
+    smallestNumber = numArry[i];
+  }
+}
+    return smallestNumber;
+}
 
 
 console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should return 1"});
@@ -124,3 +137,4 @@ var instructorTwo = instructors[0][1];
 
 var instructorThree = instructors[2][0];
 // instructorThree = <your answer>
+
