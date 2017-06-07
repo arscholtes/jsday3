@@ -13,15 +13,15 @@ sports.push('football', 'swimming');
 var strings = ['this','is','a','collection','of','words'];
 // A:
 function longestString (stringArr) {
-  let result = "";
-  let test = "";
-  for (let i = 0; i < stringArr.length; i++) {
-    test = stringArr[i];
-    if (test.length > result.length) {
-      result = test;
+  let longest = ""; // this will store the current longest string
+  let test = "";    // this will store the string we will compare to the current longest
+  for (let i = 0; i < stringArr.length; i++) {  // we need to check all the strings in the array
+    test = stringArr[i];  // set our test string to the next string in the array
+    if (test.length > longest.length) {  // if the test string is longer than the current longest...
+      longest = test;  // make the current longest equal to the test string
     }
   }
-  return result;
+  return longest; // when we're done checking, return the longest string
 }
 
 
