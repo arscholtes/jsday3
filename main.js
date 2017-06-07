@@ -64,6 +64,14 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // Write a function that accepts both an array and number argument
 // and returns an array of only the numbers greater than the number passed to the function
 // A:
+function numbersOverX(array,x) {
+  results=[];
+  for(let i=0; i<array.length; i++)
+    { if (x < array[i])
+    {results.push(array[i]);}
+}
+  return results;
+}
 
 
 console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'numbersOverX should return "18,101"'});
