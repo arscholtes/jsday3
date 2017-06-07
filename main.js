@@ -12,6 +12,17 @@ sports.push('football', 'swimming');
 // that accepts an array argument and returns the longest string in the array
 var strings = ['this','is','a','collection','of','words'];
 // A:
+function longestString (stringArr) {
+  let longest = ""; // this will store the current longest string
+  let test = "";    // this will store the string we will compare to the current longest
+  for (let i = 0; i < stringArr.length; i++) {  // we need to check all the strings in the array
+    test = stringArr[i];  // set our test string to the next string in the array
+    if (test.length > longest.length) {  // if the test string is longer than the current longest...
+      longest = test;  // make the current longest equal to the test string
+    }
+  }
+  return longest; // when we're done checking, return the longest string
+}
 
 
 console.assert(longestString(strings) === 'collection', {"message": "longestString should return 'collection'"});
@@ -79,7 +90,12 @@ console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'n
 var numbers = [1,12,4,18,9,7,11,3,101,5,6];
 var numbersTwo = [33,56,72,2,5,66,90,21,42];
 // A:
-
+function joinArrays(array1, array2) {
+  for (index in array2) {        // for every item in array2...
+    array1.push(array2[index]);  // push the thing in array2[index] into array1
+  }
+  return array1;  // return the new array1
+}
 
 console.assert(joinArrays([numbers, numbersTwo]).toString() === '1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42', {'message': 'joinArrays should return "1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42"'});
 
