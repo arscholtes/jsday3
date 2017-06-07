@@ -4,6 +4,11 @@ var sports = ['soccer', 'baseball'];
 sports.push('football', 'swimming');
 // A:
 // sports = <your answer>
+function listSports (sports){
+  return (sports);
+}
+
+
 
 
 
@@ -152,14 +157,14 @@ var instructors = [
 ];
 
 var instructorNameDiscipline = instructors[5];
-// greenvIlle = <your answer>
+// greenvIlle = [Will, JavaScript]
 
 var instructorOne = instructors[4][0];
-// instructorOne = <your answer>
+// instructorOne = [Dan, JavaScript] [JD, JavaScript]
 
 var instructorTwo = instructors[0][1];
-// instructorTwo = <your answer>
+// instructorTwo = [JD, JavaScript] [Tim, Javascript]
 
 var instructorThree = instructors[2][0];
-// instructorThree = <your answer>
 
+// instructorThree = [Brit, Ruby] [JD, JavaScript]
